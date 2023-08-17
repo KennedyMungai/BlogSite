@@ -19,17 +19,14 @@ export function getSortedPostsData() {
 		const matterResult = matter(fileContents)
 
 		// Combine the data with the id
-		return {
+		const blogPost: BlogPost = {
 			id,
-			...matterResult.data
+			title: matterResult.data.title,
+			date: matterResult.data.date
 		}
+
+		return blogPost
 	})
 	// Sort posts by date
-	return allPostsData.sort((a, b) => {
-		if (a.date < b.date) {
-			return 1
-		} else {
-			return -1
-		}
-	})
+	return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1))
 }
