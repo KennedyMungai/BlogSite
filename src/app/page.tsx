@@ -1,5 +1,14 @@
 import Image from 'next/image'
 
 export default function Home() {
-  return <main className='h-screen w-screen bg-slate-700 text-slate-200'></main>
+  return (
+		<main className='px-6 mx-auto'>
+			<p className='mt-12 mb-12 text-3xl text-center dark:text-white'>
+				Hello and Welcome👋{' '}
+				<span className='whitespace-nowrap'>
+					I am <span className='font-bold'>John</span>
+				</span>
+			</p>
+		</main>
+  )
 }
