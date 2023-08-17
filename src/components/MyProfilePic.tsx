@@ -11,7 +11,6 @@ const MyProfilePic = (props: Props) => {
 				width={'200'}
 				height={'200'}
 				alt='Profile Pic'
-				priority={true}
 				loading='lazy'
 			></Image>
 		</section>
