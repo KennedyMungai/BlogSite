@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FaYoutube, FaTwitter, FaGithub, FaLaptop } from 'react-icons/fa'
 
 const Navbar = () => {
 	return (
@@ -12,6 +13,32 @@ const Navbar = () => {
 						John Mungai
 					</Link>
 				</h1>
+				<div className='flex justify-center sm:justify-evenly align-middle gap-6 text-white text-2xl lg:text-5xl'>
+					<Link
+						href={'https://youtube.com/@KennedyMungai01'}
+						className='text-white/90 hover:text-white'
+					>
+						<FaYoutube />
+					</Link>
+					<Link
+						href={'https://github.com/KennedyMungai'}
+						className='text-white/90 hover:text-white'
+					>
+						<FaGithub />
+					</Link>
+					<Link
+						href={'https://twitter.com/KennedyMungai'}
+						className='text-white/90 hover:text-white'
+					>
+						<FaTwitter />
+					</Link>
+					<Link
+						href={'https://kennedymungai.com/portfolio'}
+						className='text-white/90 hover:text-white'
+					>
+						<FaLaptop />
+					</Link>
+				</div>
 			</div>
 		</nav>
 	)
